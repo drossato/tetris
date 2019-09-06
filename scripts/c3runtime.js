@@ -559,6 +559,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Behaviors.custom.Acts.SetSpeed,
 		C3.Plugins.Audio.Acts.PreloadByName,
 		C3.Plugins.Keyboard.Cnds.OnKey,
+		C3.Plugins.Touch.Cnds.OnTapGestureObject,
 		C3.Plugins.Sprite.Acts.RotateClockwise,
 		C3.Plugins.Sprite.Cnds.OnDestroyed,
 		C3.Behaviors.custom.Acts.SetEnabled,
@@ -567,7 +568,9 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Sprite.Acts.SetVisible,
 		C3.Plugins.Audio.Acts.StopAll,
 		C3.Plugins.Sprite.Cnds.OnCollision,
-		C3.Plugins.Sprite.Acts.Destroy
+		C3.Plugins.Sprite.Acts.Destroy,
+		C3.Plugins.Touch.Cnds.IsTouchingObject,
+		C3.Behaviors.EightDir.Acts.SimulateControl
 	];
 };
 self.C3_JsPropNameTable = [
@@ -578,7 +581,10 @@ self.C3_JsPropNameTable = [
 	{penis: 0},
 	{out: 0},
 	{preto2: 0},
-	{musica: 0}
+	{musica: 0},
+	{btnLeft: 0},
+	{btnRight: 0},
+	{btnUp: 0}
 ];
 
 "use strict";
